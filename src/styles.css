@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --Dark-mode-main: #1A1856;
+  --Dark-mode-main-2: #554994;
+  --Dark-mode-contrast: #FFDAE5;
+  --Dark-mode-main-80: rgba(26,24,86,0.8);
+  --Home-page-main:#2c6fff;
+  --Home-page-main-transparent: #c5d8ff44;
+}
+
+* {
+  font-family: 'Overpass', Tahoma, sans-serif;
+}
+  
+body {
+  margin: 0;
+  background: rgb(255,188,166);
+}  

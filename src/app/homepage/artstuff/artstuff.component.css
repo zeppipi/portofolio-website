@@ -1,0 +1,81 @@
+.accordion {
+    padding: 1em;
+    transition: 300ms;
+    --bs-accordion-bg: transparent;
+    --bs-accordion-border-color: var(--Dark-mode-contrast);
+    --bs-accordion-border-width: 5px;
+    --bs-accordion-btn-color: var(--Home-page-main);
+    --bs-accordion-active-bg: var(--Dark-mode-contrast);
+    --bs-accordion-btn-focus-border-color: transparent;
+    --bs-accordion-active-color: transparent;
+    --bs-accordion-btn-focus-box-shadow: transparent;
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230a58ca'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.artstuff-header-content, #artstuff-content {
+    color: var(--Home-page-main);
+    display: flex;
+    width: 100%;
+}
+
+#artstuff-content {
+    border-bottom: solid var(--Dark-mode-contrast) 4px;
+}
+
+.artstuff-content-text {
+    padding: 1em 0 1em 1em;
+    width: 75%;
+}
+
+.artstuff-content-image {
+    padding: .1em;
+    font-size: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+}
+
+.artstuff-content-image > img {
+    padding: 25%;
+    width: 100%;
+    height: 100%;
+}
+
+.artstuff-content-text > h2 {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.artstuff-content-text > h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.artstuff-button {
+    border-radius: 10px;
+    font-size: 1.2em;
+    background-color: transparent;
+    border: solid var(--Home-page-main) 2px;
+    color: var(--Home-page-main);
+    cursor: pointer;
+    transition: 100ms;
+    padding: 0.3em;
+}
+
+.artstuff-button:hover {
+    transition: 300ms;
+    background-color: var(--Home-page-main);
+    color: var(--Dark-mode-contrast);
+    padding: 0.3em 0.5em;
+}
+
+.artstuff-header-content > p {
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 1000px) {
+    .artstuff-content-image {
+        display: none;
+    }
+}

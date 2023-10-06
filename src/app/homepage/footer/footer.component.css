@@ -1,0 +1,27 @@
+.footer {
+    margin: 0;
+}
+
+p, .footer-logo {
+    margin: 0;
+    color: var(--Home-page-main);
+    font-weight: 600;
+}
+
+.footer-logo {
+    max-width: 36px;
+    /* filter: invert(87%) sepia(9%) saturate(702%) hue-rotate(299deg) brightness(101%) contrast(102%); */
+    filter: invert(43%) sepia(75%) saturate(4990%) hue-rotate(213deg) brightness(101%) contrast(101%);
+    float: left;
+    margin-left: 1em;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    padding: .3em 0 .3em .3em;
+}
+
+.footer-text {
+    font-size: .8em;
+}

@@ -1,0 +1,45 @@
+<div class="accordion" id="devstuff-accordion">
+  <div class="accordion-item" id="devstuff-item">
+    <h2 class="accordion-header" id="devstuffItemHeader">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#devstuff-collapse" aria-expanded="false" aria-controls="devstuff-collapse">
+        <div class="devstuff-header-content">
+          <div class = "devstuff-content-text">
+            <h2>Dev Stuff</h2>
+            <p>The place for all of my code related works, includes personal projects and some university assignments projects</p>
+          </div>
+          <div class="devstuff-content-image">
+            <fa-icon [icon]="['fas', 'desktop']"></fa-icon>
+          </div>
+        </div>
+      </button>
+    </h2>
+    <!--First item-->
+    <div id="devstuff-collapse" class="accordion-collapse collapse" aria-labelledby="devstuffItemHeader" data-bs-parent="#devstuff-accordion">
+      <div class="accordion-body" id="devstuff-content">
+        <div class="devstuff-content-text">
+          <h3>Github</h3>
+          <p>This is where I include almost all of my projects which includes ongoing ones</p>
+          <a href="https://github.com/zeppipi">
+            <button class="devstuff-button">See Github Page</button>
+          </a>
+        </div>
+        <div class="devstuff-content-image">
+          <fa-icon [icon]="['fab', 'github']"></fa-icon>
+        </div>
+      </div>
+      <!--Second item-->
+      <div class="accordion-body" id="devstuff-content">
+        <div class="devstuff-content-text">
+          <h3>Itch.io</h3>
+          <p>This is where I place specifically my game projects</p>
+          <a href="https://zepphy.itch.io/">
+            <button class="devstuff-button">See Itch.io Page</button>
+          </a>
+        </div>
+        <div class="devstuff-content-image">
+          <fa-icon [icon]="['fab', 'itch-io']"></fa-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
