@@ -74,7 +74,7 @@
     font-size: 1.5em;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 750px) {
     .artstuff-content-image {
         display: none;
     }
