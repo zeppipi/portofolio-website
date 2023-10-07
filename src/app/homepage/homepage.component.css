@@ -67,10 +67,9 @@
     border-radius: 50%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 750px) {
     .content {
-      width: 80%;
-      max-width: 100%;
+      width: 100%;
     }
 }
 
