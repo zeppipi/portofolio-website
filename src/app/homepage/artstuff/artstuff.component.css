@@ -73,6 +73,10 @@
     font-size: 1.5em;
 }
 
+.blue-filter {
+    filter: brightness(0) saturate(100%) invert(35%) sepia(79%) saturate(3176%) hue-rotate(213deg) brightness(102%) contrast(101%);
+}
+
 @media screen and (max-width: 750px) {
     .artstuff-content-image {
         display: none;
