@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -19,6 +19,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { BannerComponent } from './homepage/banner/banner.component';
 import { DevstuffComponent } from './homepage/devstuff/devstuff.component';
 import { ArtstuffComponent } from './homepage/artstuff/artstuff.component';
+import { LatestActivityComponent } from './homepage/latest-activity/latest-activity.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,14 +29,17 @@ import { ArtstuffComponent } from './homepage/artstuff/artstuff.component';
     HomepageComponent,
     BannerComponent,
     DevstuffComponent,
-    ArtstuffComponent
+    ArtstuffComponent,
+    LatestActivityComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule 
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })

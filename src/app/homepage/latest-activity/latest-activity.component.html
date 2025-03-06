@@ -1,0 +1,32 @@
+<div class="accordion" id="latest-activity-accordion">
+    <div class="accordion-item" id="latest-activity-item">
+        <h2 class="accordion-header" id="latest-activity-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#latest-activity-collapse" aria-expanded="false" aria-controls="latest-activity-collapse">
+                <div class="latest-activity-header-content">
+                    <div class = "latest-activity-content-text">
+                        <p>Latest Activity <img src="assets/images/bluesky-brands-solid.svg" class="blue-filter"></p>
+                    </div>
+                </div>
+            </button>
+        </h2>
+        <!--Content-->
+        <div id="latest-activity-collapse" class="accordion-collapse collapse" aria-labelledby="latest-activity-header" data-bs-parent="#latest-activity-accordion">
+            <div class="accordion-body" id="latest-activity-content">
+                <bsky-embed
+                    username = "zepphy.bsky.social"
+                    limit = "1"
+                    link-target = "_blank"
+                    link-image = "true"
+                    load-more = "false"
+                    custom-styles =
+                        ".border-b {border-bottom-width: 0px;} 
+                        .gap-2 {max-width: 100%;}
+                        .w-full {max-width: 100%; color:var(--Home-page-main);}
+                        .text-slate-500 {color: var(--Home-page-main)}
+                        .text-slate-600 {color: var(--Home-page-main)}
+                        .rounded-md {border-color: var(--Dark-mode-contrast); border-width: 3px}"
+                ></bsky-embed>
+            </div>
+        </div>
+    </div>
+</div>
